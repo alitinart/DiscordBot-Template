@@ -9,4 +9,4 @@ The bot has only has 3 commands,<br><br>
 Its pretty easy to add new commands using the avalible code.
 # Make sure to input all the info of the bot
 
-Things like the bot's token and the bots name must be placed in the required spots of the code.
+Things like the bot's token and the bot's name must be placed in the required spots of the code.
