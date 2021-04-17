@@ -10,9 +10,11 @@ async def on_ready():
     print('We have logged in as {0.user}'.format(bot))
     await bot.change_presence(activity=discord.Game(name="-help | NAME OF BOT"))
 
+# Add the commands for the bot
+
 async def on_message(message):
-    if message.author == bot.user:
-        return
+    if message.author == bot.user: # Check's if the message which has been sent is from the bot
+        return # If the message is sent from the bot, then it does nothing
       
     if message.content.startswith("-help"):
         emb = discord.Embed(title='NAME OF BOT Commands')
