@@ -20,6 +20,7 @@ async def on_message(message):
         emb = discord.Embed(title='NAME OF BOT Commands')
         emb.add_field(title='-ping', value='Mesaure your ping', inline=False)
         emb.add_field(title='-poll e.g Is pineapple good on pizza ?', value='Mesaure your ping', inline=False)
+        await message.channel.send(embed=emb)
         
     if message.content.startswith('-ping'):
         emb = discord.Embed(title='Pong!  ', description=f'{round(bot.latency * 1000)}ms')
